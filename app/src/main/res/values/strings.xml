@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TED App</string>
+    <string name="dummy_talk_topic">How adoption worked for me</string>
+    <string name="dummy_breif_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat, ante in rutrum gravida, ante massa eleifend lacus, quis aliquet lorem nunc lobortis diam. Mauris rhoncus libero dui, at sollicitudin orci pulvinar at. Curabitur purus mi, convallis nec ex ac, elementum suscipit nibh. Vestibulum eu tortor in magna finibus egestas. Donec auctor ornare convallis. Phasellus ut lectus at orci condimentum egestas. Ut maximus neque arcu, ac feugiat erat luctus tempor. Suspendisse et urna in erat facilisis pretium non sed dolor. Quisque justo dui, aliquam vitae vulputate a, tristique non sapien. Donec egestas efficitur ante, quis consequat felis sodales sit amet. Cras quis sodales ligula. Suspendisse fringilla faucibus dolor, nec lobortis augue blandit at. Pellentesque lacinia vulputate enim, sed pharetra felis blandit rutrum. In laoreet sed sapien eget venenatis.</string>
 </resources>

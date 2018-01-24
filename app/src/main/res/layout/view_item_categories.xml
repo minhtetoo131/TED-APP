@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/margin_medium"
+    android:paddingLeft="@dimen/margin_medium"
+    android:paddingTop="@dimen/margin_medium">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/category_item_view_dummy_image"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_talk_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_talk_topic"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular_3x"
+        android:textStyle="bold"
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="@dimen/margin_medium"
+        />
+
+    <TextView
+        android:id="@+id/tv_speaker_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Christopher Ategeka"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="@dimen/margin_medium"/>
+
+    <TextView
+        android:id="@+id/tv_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="18 : 13"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/tv_talk_topic"
+        android:layout_marginRight="@dimen/margin_medium"/>
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_length"
+        android:layout_alignRight="@id/tv_length"
+        android:src="@drawable/ic_more_vert_24dp"/>
+
+
+
+</RelativeLayout>
