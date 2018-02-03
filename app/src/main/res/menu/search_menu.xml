@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_menu_item"
+        android:icon="@drawable/ic_search_24dp"
+        android:orderInCategory="50"
+        android:title="Search"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <item
+        android:id="@+id/speak_menu_item"
+        android:icon="@drawable/ic_mic_24dp"
+        android:orderInCategory="60"
+        android:title="Speak"
+        app:showAsAction="always" />
+</menu>

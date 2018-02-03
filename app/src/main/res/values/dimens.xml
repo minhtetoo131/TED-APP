@@ -34,4 +34,9 @@
     <dimen name="fab_margin">16dp</dimen>
 
 
+
+    <dimen name="margin_show_all">70dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+
+
 </resources>

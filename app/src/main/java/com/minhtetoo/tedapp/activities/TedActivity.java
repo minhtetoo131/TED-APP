@@ -1,4 +1,4 @@
-package com.minhtetoo.tedapp;
+package com.minhtetoo.tedapp.activities;
 
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TableLayout;
 
+import com.minhtetoo.tedapp.R;
 import com.minhtetoo.tedapp.adapters.TedPagerAdapter;
 
 import butterknife.BindView;
@@ -66,7 +67,7 @@ public class TedActivity extends AppCompatActivity {
         mFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(mFab,"Fab click",Snackbar.LENGTH_LONG).show();
+                startActivity(SearchActivity.getIntent(getApplicationContext()));
             }
         });
 

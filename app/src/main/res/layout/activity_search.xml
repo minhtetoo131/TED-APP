@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme.PopUpOverlay">
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_topic_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/card_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lbl_recommended_topics"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:padding="@dimen/margin_medium"
+                        android:text="Recommended Topics"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_regular" />
+
+                    <TextView
+                        android:id="@+id/tv_state_buildings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/lbl_recommended_topics"
+                        android:layout_below="@id/lbl_recommended_topics"
+                        android:drawableLeft="@drawable/ic_attachment_24dp"
+                        android:drawablePadding="@dimen/margin_large"
+                        android:padding="@dimen/margin_medium"
+                        android:text="State Buildings"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <TextView
+                        android:id="@+id/tv_buddish"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/lbl_recommended_topics"
+                        android:layout_below="@id/tv_state_buildings"
+                        android:drawableLeft="@drawable/ic_attachment_24dp"
+                        android:drawablePadding="@dimen/margin_large"
+                        android:padding="@dimen/margin_medium"
+                        android:text="Buddish"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <TextView
+                        android:id="@+id/tv_ted_books"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/lbl_recommended_topics"
+                        android:layout_below="@id/tv_buddish"
+                        android:drawableLeft="@drawable/ic_attachment_24dp"
+                        android:drawablePadding="@dimen/margin_large"
+                        android:padding="@dimen/margin_medium"
+                        android:text="Ted Books"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_ted_books"
+                        android:layout_marginLeft="@dimen/margin_show_all"
+                        android:padding="@dimen/margin_medium"
+                        android:text="Show all Topics"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_regular" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_speakers_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_topic_section"
+                app:cardElevation="@dimen/card_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lbl_recommended_speakers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:padding="@dimen/margin_medium"
+                        android:text="Recommended Speakers"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_regular"
+
+                        />
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image_one"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/lbl_recommended_speakers"
+                        android:layout_marginLeft="@dimen/margin_medium_2"
+                        android:src="@drawable/dummy_user_profile_image" />
+
+                    <TextView
+                        android:id="@+id/tv_speaker_name_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lbl_recommended_speakers"
+                        android:layout_marginLeft="@dimen/margin_medium_2"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_toRightOf="@+id/profile_image_one"
+                        android:text="Iyad Rahwan"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_regular_2x" />
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image_two"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/profile_image_one"
+                        android:layout_marginLeft="@dimen/margin_medium_2"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:src="@drawable/dummy_user_profile_image" />
+                    <TextView
+                        android:id="@+id/tv_speaker_name_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/profile_image_two"
+                        android:layout_below="@+id/profile_image_one"
+                        android:layout_marginLeft="@dimen/margin_medium_3"
+                        android:layout_marginTop="@dimen/margin_medium_3"
+                        android:layout_toRightOf="@+id/profile_image_one"
+                        android:text="Iyad Rahwan"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image_three"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignLeft="@+id/profile_image_two"
+                        android:layout_below="@id/profile_image_two"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:src="@drawable/dummy_user_profile_image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/profile_image_two"
+                        android:layout_below="@+id/profile_image_two"
+                        android:layout_marginLeft="@dimen/margin_medium_2"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_toRightOf="@+id/profile_image_one"
+                        android:text="Iyad Rahwan"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/profile_image_three"
+                        android:layout_marginLeft="@dimen/margin_show_all"
+                        android:padding="@dimen/margin_medium"
+                        android:text="Show all Topics"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_regular"
+                        android:layout_marginTop="@dimen/margin_large"/>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_subtitle_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/card_elevation"
+                android:layout_below="@+id/card_speakers_section">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lbl_recommended_subtitle_languages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:padding="@dimen/margin_medium"
+                        android:text="Recommended Topics"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_regular"
+                        />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
